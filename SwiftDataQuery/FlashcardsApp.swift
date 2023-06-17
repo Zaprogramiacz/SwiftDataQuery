@@ -7,13 +7,13 @@ import SwiftData
 
 @main
 struct FlashcardsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            NavigationStack {
-                FlashcardSetsView()
-            }
-        }.modelContainer(
-            for: [FlashcardsSet.self, Flashcard.self]
-        )
-    }
+  var body: some Scene {
+    WindowGroup {
+      NavigationStack {
+        FlashcardSetsView()
+      }
+    }.modelContainer(
+      for: [FlashcardsSet.self, Flashcard.self]
+    )
+  }
 }

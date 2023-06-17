@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		474DB3B92A3E033B0078EF54 /* SwiftDataQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		474DB3BC2A3E033B0078EF54 /* FlashcardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsApp.swift; sourceTree = "<group>"; };
-		474DB3BE2A3E033B0078EF54 /* FlashcardSetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardSetsView.swift; sourceTree = "<group>"; };
+		474DB3BE2A3E033B0078EF54 /* FlashcardSetsView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = FlashcardSetsView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		474DB3C02A3E033C0078EF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		474DB3CE2A3E044F0078EF54 /* SwiftDataQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		474DB3D82A3E1D220078EF54 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };

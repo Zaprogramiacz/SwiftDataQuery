@@ -6,11 +6,11 @@ import SwiftData
 
 @Model
 class FlashcardsSet {
-    @Attribute(.unique) let name: String
-    var flashcards: [Flashcard] = []
+  @Attribute(.unique) let name: String
+  var flashcards: [Flashcard] = []
 
-    init(name: String, flashcards: [Flashcard]) {
-        self.name = name
-        self.flashcards = flashcards
-    }
+  init(name: String, flashcards: [Flashcard]) {
+    self.name = name
+    self.flashcards = flashcards
+  }
 }

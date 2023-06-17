@@ -7,13 +7,13 @@ import SwiftData
 
 @Model
 class Flashcard {
-    @Attribute(.unique) let uuid: String
-    let front: String
-    let back: String
+  @Attribute(.unique) let uuid: String
+  let front: String
+  let back: String
 
-    init(front: String, back: String) {
-        self.uuid = UUID().uuidString
-        self.front = front
-        self.back = back
-    }
+  init(front: String, back: String) {
+    self.uuid = UUID().uuidString
+    self.front = front
+    self.back = back
+  }
 }

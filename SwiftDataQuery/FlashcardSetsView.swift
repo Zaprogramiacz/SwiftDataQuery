@@ -6,26 +6,26 @@ import SwiftUI
 import SwiftData
 
 struct FlashcardSetsView: View {
-    @Query var flashcardSets: [FlashcardsSet]
-    @Environment(\.modelContext) private var context
+  @Query var flashcardSets: [FlashcardsSet]
+  @Environment(\.modelContext) private var context
 
-    var body: some View {
-        List {
-            Section {
-                Button("Generate random set") {
-                    context.insert(Random.flashcardsSet())
-                }
-            }
-            Section {
-                ForEach(flashcardSets) { flashcardsSet in
-                    HStack {
-                        Text(flashcardsSet.name)
-                        Spacer()
-                        Text("Cards: \(flashcardsSet.flashcards.count)")
-                    }
-                }
-            }
+  var body: some View {
+    List {
+      Section {
+        Button("Generate random set") {
+          context.insert(Random.flashcardsSet())
         }
-        .navigationTitle("Flashcard Sets")
+      }
+      Section {
+        ForEach(flashcardSets) { flashcardsSet in
+          HStack {
+            Text(flashcardsSet.name)
+            Spacer()
+            Text("Cards: \(flashcardsSet.flashcards.count)")
+          }
+        }
+      }
     }
+    .navigationTitle("Flashcard Sets")
+  }
 }
