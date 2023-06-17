@@ -61,9 +61,9 @@
 		474DB3B02A3E033B0078EF54 = {
 			isa = PBXGroup;
 			children = (
+				474DB3BA2A3E033B0078EF54 /* Products */,
 				474DB3BB2A3E033B0078EF54 /* SwiftDataQuery */,
 				474DB3CF2A3E044F0078EF54 /* SwiftDataQueryTests */,
-				474DB3BA2A3E033B0078EF54 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,11 +79,11 @@
 		474DB3BB2A3E033B0078EF54 /* SwiftDataQuery */ = {
 			isa = PBXGroup;
 			children = (
+				47F26D4C2A3E5355005C3EA7 /* App */,
+				47F26D4E2A3E5365005C3EA7 /* Helpers */,
 				474DB3D72A3E1D110078EF54 /* Models */,
-				474DB3BC2A3E033B0078EF54 /* FlashcardsApp.swift */,
-				474DB3BE2A3E033B0078EF54 /* FlashcardSetsView.swift */,
-				474DB3C02A3E033C0078EF54 /* Assets.xcassets */,
-				47F26D492A3E3E61005C3EA7 /* Random.swift */,
+				47F26D4F2A3E5374005C3EA7 /* Resources */,
+				47F26D4D2A3E535C005C3EA7 /* Views */,
 			);
 			path = SwiftDataQuery;
 			sourceTree = "<group>";
@@ -105,6 +105,38 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		47F26D4C2A3E5355005C3EA7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				474DB3BC2A3E033B0078EF54 /* FlashcardsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		47F26D4D2A3E535C005C3EA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				474DB3BE2A3E033B0078EF54 /* FlashcardSetsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47F26D4E2A3E5365005C3EA7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				47F26D492A3E3E61005C3EA7 /* Random.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		47F26D4F2A3E5374005C3EA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				474DB3C02A3E033C0078EF54 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,8 +153,6 @@
 			dependencies = (
 			);
 			name = SwiftDataQuery;
-			packageProductDependencies = (
-			);
 			productName = SwiftDataQueryTesting;
 			productReference = 474DB3B92A3E033B0078EF54 /* SwiftDataQuery.app */;
 			productType = "com.apple.product-type.application";
