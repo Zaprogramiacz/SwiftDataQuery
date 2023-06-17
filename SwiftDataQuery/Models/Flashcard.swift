@@ -8,4 +8,11 @@ import SwiftData
 @Model
 class Flashcard {
     @Attribute(.unique) let uuid: String = UUID().uuidString
+    let front: String
+    let back: String
+
+    init(front: String, back: String) {
+        self.front = front
+        self.back = back
+    }
 }

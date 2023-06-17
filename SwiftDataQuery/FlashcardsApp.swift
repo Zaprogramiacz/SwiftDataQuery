@@ -3,6 +3,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct FlashcardsApp: App {
@@ -11,6 +12,6 @@ struct FlashcardsApp: App {
             NavigationStack {
                 FlashcardSetsView()
             }
-        }
+        }.modelContainer(for: [Flashcard.self, FlashcardsSet.self])
     }
 }

@@ -10,7 +10,11 @@ struct FlashcardSetsView: View {
 
     var body: some View {
         List(flashcardSets) { flashcardsSet in
-            Text("\(flashcardsSet.name) Cards: \(flashcardsSet.flashcards.count)")
+            HStack {
+                Text(flashcardsSet.name)
+                Spacer()
+                Text("Cards: \(flashcardsSet.flashcards.count)")
+            }
         }.navigationTitle("Flashcard Sets")
     }
 }
