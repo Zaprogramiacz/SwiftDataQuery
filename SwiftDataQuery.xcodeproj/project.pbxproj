@@ -7,22 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		474DB3BD2A3E033B0078EF54 /* SwiftDataQueryTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DB3BC2A3E033B0078EF54 /* SwiftDataQueryTestingApp.swift */; };
+		474DB3BD2A3E033B0078EF54 /* SwiftDataQueryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DB3BC2A3E033B0078EF54 /* SwiftDataQueryApp.swift */; };
 		474DB3BF2A3E033B0078EF54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DB3BE2A3E033B0078EF54 /* ContentView.swift */; };
 		474DB3C12A3E033C0078EF54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474DB3C02A3E033C0078EF54 /* Assets.xcassets */; };
-		474DB3C42A3E033C0078EF54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474DB3C32A3E033C0078EF54 /* Preview Assets.xcassets */; };
+		474DB3D12A3E044F0078EF54 /* SwiftDataQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DB3D02A3E044F0078EF54 /* SwiftDataQueryTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		474DB3D22A3E044F0078EF54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 474DB3B12A3E033B0078EF54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 474DB3B82A3E033B0078EF54;
+			remoteInfo = SwiftDataQueryTesting;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		474DB3B92A3E033B0078EF54 /* SwiftDataQueryTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataQueryTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		474DB3BC2A3E033B0078EF54 /* SwiftDataQueryTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataQueryTestingApp.swift; sourceTree = "<group>"; };
+		474DB3B92A3E033B0078EF54 /* SwiftDataQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		474DB3BC2A3E033B0078EF54 /* SwiftDataQueryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataQueryApp.swift; sourceTree = "<group>"; };
 		474DB3BE2A3E033B0078EF54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		474DB3C02A3E033C0078EF54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		474DB3C32A3E033C0078EF54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		474DB3CE2A3E044F0078EF54 /* SwiftDataQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDataQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		474DB3D02A3E044F0078EF54 /* SwiftDataQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataQueryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		474DB3B62A3E033B0078EF54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474DB3CB2A3E044F0078EF54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +53,8 @@
 		474DB3B02A3E033B0078EF54 = {
 			isa = PBXGroup;
 			children = (
-				474DB3BB2A3E033B0078EF54 /* SwiftDataQueryTesting */,
+				474DB3BB2A3E033B0078EF54 /* SwiftDataQuery */,
+				474DB3CF2A3E044F0078EF54 /* SwiftDataQueryTests */,
 				474DB3BA2A3E033B0078EF54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,36 +62,36 @@
 		474DB3BA2A3E033B0078EF54 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				474DB3B92A3E033B0078EF54 /* SwiftDataQueryTesting.app */,
+				474DB3B92A3E033B0078EF54 /* SwiftDataQuery.app */,
+				474DB3CE2A3E044F0078EF54 /* SwiftDataQueryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		474DB3BB2A3E033B0078EF54 /* SwiftDataQueryTesting */ = {
+		474DB3BB2A3E033B0078EF54 /* SwiftDataQuery */ = {
 			isa = PBXGroup;
 			children = (
-				474DB3BC2A3E033B0078EF54 /* SwiftDataQueryTestingApp.swift */,
+				474DB3BC2A3E033B0078EF54 /* SwiftDataQueryApp.swift */,
 				474DB3BE2A3E033B0078EF54 /* ContentView.swift */,
 				474DB3C02A3E033C0078EF54 /* Assets.xcassets */,
-				474DB3C22A3E033C0078EF54 /* Preview Content */,
 			);
-			path = SwiftDataQueryTesting;
+			path = SwiftDataQuery;
 			sourceTree = "<group>";
 		};
-		474DB3C22A3E033C0078EF54 /* Preview Content */ = {
+		474DB3CF2A3E044F0078EF54 /* SwiftDataQueryTests */ = {
 			isa = PBXGroup;
 			children = (
-				474DB3C32A3E033C0078EF54 /* Preview Assets.xcassets */,
+				474DB3D02A3E044F0078EF54 /* SwiftDataQueryTests.swift */,
 			);
-			path = "Preview Content";
+			path = SwiftDataQueryTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		474DB3B82A3E033B0078EF54 /* SwiftDataQueryTesting */ = {
+		474DB3B82A3E033B0078EF54 /* SwiftDataQuery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 474DB3C72A3E033C0078EF54 /* Build configuration list for PBXNativeTarget "SwiftDataQueryTesting" */;
+			buildConfigurationList = 474DB3C72A3E033C0078EF54 /* Build configuration list for PBXNativeTarget "SwiftDataQuery" */;
 			buildPhases = (
 				474DB3B52A3E033B0078EF54 /* Sources */,
 				474DB3B62A3E033B0078EF54 /* Frameworks */,
@@ -82,10 +101,28 @@
 			);
 			dependencies = (
 			);
-			name = SwiftDataQueryTesting;
+			name = SwiftDataQuery;
 			productName = SwiftDataQueryTesting;
-			productReference = 474DB3B92A3E033B0078EF54 /* SwiftDataQueryTesting.app */;
+			productReference = 474DB3B92A3E033B0078EF54 /* SwiftDataQuery.app */;
 			productType = "com.apple.product-type.application";
+		};
+		474DB3CD2A3E044F0078EF54 /* SwiftDataQueryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 474DB3D42A3E044F0078EF54 /* Build configuration list for PBXNativeTarget "SwiftDataQueryTests" */;
+			buildPhases = (
+				474DB3CA2A3E044F0078EF54 /* Sources */,
+				474DB3CB2A3E044F0078EF54 /* Frameworks */,
+				474DB3CC2A3E044F0078EF54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474DB3D32A3E044F0078EF54 /* PBXTargetDependency */,
+			);
+			name = SwiftDataQueryTests;
+			productName = SwiftDataQueryTests;
+			productReference = 474DB3CE2A3E044F0078EF54 /* SwiftDataQueryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,9 +137,13 @@
 					474DB3B82A3E033B0078EF54 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					474DB3CD2A3E044F0078EF54 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 474DB3B82A3E033B0078EF54;
+					};
 				};
 			};
-			buildConfigurationList = 474DB3B42A3E033B0078EF54 /* Build configuration list for PBXProject "SwiftDataQueryTesting" */;
+			buildConfigurationList = 474DB3B42A3E033B0078EF54 /* Build configuration list for PBXProject "SwiftDataQuery" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +156,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				474DB3B82A3E033B0078EF54 /* SwiftDataQueryTesting */,
+				474DB3B82A3E033B0078EF54 /* SwiftDataQuery */,
+				474DB3CD2A3E044F0078EF54 /* SwiftDataQueryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +167,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				474DB3C42A3E033C0078EF54 /* Preview Assets.xcassets in Resources */,
 				474DB3C12A3E033C0078EF54 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474DB3CC2A3E044F0078EF54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,11 +186,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				474DB3BF2A3E033B0078EF54 /* ContentView.swift in Sources */,
-				474DB3BD2A3E033B0078EF54 /* SwiftDataQueryTestingApp.swift in Sources */,
+				474DB3BD2A3E033B0078EF54 /* SwiftDataQueryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		474DB3CA2A3E044F0078EF54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474DB3D12A3E044F0078EF54 /* SwiftDataQueryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		474DB3D32A3E044F0078EF54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 474DB3B82A3E033B0078EF54 /* SwiftDataQuery */;
+			targetProxy = 474DB3D22A3E044F0078EF54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		474DB3C52A3E033C0078EF54 /* Debug */ = {
@@ -271,7 +335,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataQueryTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = TC4LDUY2D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +363,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftDataQueryTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = TC4LDUY2D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,10 +384,46 @@
 			};
 			name = Release;
 		};
+		474DB3D52A3E044F0078EF54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC4LDUY2D5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mg.SwiftDataQueryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDataQuery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftDataQuery";
+			};
+			name = Debug;
+		};
+		474DB3D62A3E044F0078EF54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TC4LDUY2D5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mg.SwiftDataQueryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDataQuery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftDataQuery";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		474DB3B42A3E033B0078EF54 /* Build configuration list for PBXProject "SwiftDataQueryTesting" */ = {
+		474DB3B42A3E033B0078EF54 /* Build configuration list for PBXProject "SwiftDataQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				474DB3C52A3E033C0078EF54 /* Debug */,
@@ -334,11 +432,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		474DB3C72A3E033C0078EF54 /* Build configuration list for PBXNativeTarget "SwiftDataQueryTesting" */ = {
+		474DB3C72A3E033C0078EF54 /* Build configuration list for PBXNativeTarget "SwiftDataQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				474DB3C82A3E033C0078EF54 /* Debug */,
 				474DB3C92A3E033C0078EF54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		474DB3D42A3E044F0078EF54 /* Build configuration list for PBXNativeTarget "SwiftDataQueryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474DB3D52A3E044F0078EF54 /* Debug */,
+				474DB3D62A3E044F0078EF54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

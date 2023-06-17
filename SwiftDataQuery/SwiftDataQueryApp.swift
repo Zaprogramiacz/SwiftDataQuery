@@ -1,7 +1,4 @@
 //
-//  SwiftDataQueryTestingApp.swift
-//  SwiftDataQueryTesting
-//
 //  Created by Maciej Gomółka on 17.06.23.
 //
 

@@ -1,7 +1,4 @@
 //
-//  ContentView.swift
-//  SwiftDataQueryTesting
-//
 //  Created by Maciej Gomółka on 17.06.23.
 //
 
@@ -17,8 +14,4 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
