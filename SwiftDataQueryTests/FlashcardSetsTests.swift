@@ -19,127 +19,45 @@ class FlashcardSetsTests: XCTestCase {
                 .modelContainer(inMemoryContainer)
         }
 
-        let englishSet = FlashcardsSet(name: "English", flashcards: [Random.flashcard(), Random.flashcard(), Random.flashcard()])
-        let spanishSet = FlashcardsSet(name: "Spanish", flashcards: [Random.flashcard()])
-
-        inMemoryContainer.mainContext.insert(englishSet)
-        inMemoryContainer.mainContext.insert(spanishSet)
+        DatabaseSeeder.seed([
+            .quantumMechanic100,
+            .mechanics0,
+            .nanoscience30,
+            .biophysics10,
+            .nanotechnology5,
+            .nuclearPhysics70,
+            .astrophysics20
+        ], context: inMemoryContainer.mainContext)
 
         let viewController = UIHostingController(rootView: sut)
-        assertSnapshot(matching: viewController, as: .image(on: .iPhone13Pro))
+        assertSnapshot(matching: viewController, as: .image(on: .iPhone13Pro), record: true)
     }
+
+    // MARK: - Private
 
 }
 
-enum Random {
+enum DatabaseSeeder {
+    static func seed(_ flashcardSets: [FlashcardsSet], context: ModelContext) {
+        flashcardSets.forEach { flashcardsSet in
+            context.insert(flashcardsSet)
+        }
+    }
+}
 
-    static func flashcard() -> Flashcard {
-        .init(front: Self.word(), back: Self.word())
+private extension FlashcardsSet {
+
+    convenience init(name: String, numberOfFlashcards: Int) {
+        self.init(name: name, flashcards: Random.flashcards(numberOfFlashcards))
     }
 
-    static func word() -> String {
-        [
-            "fireman",
-            "support",
-            "heal",
-            "fix",
-            "behavior",
-            "fuzzy",
-            "miss",
-            "name",
-            "versed",
-            "spade",
-            "longing",
-            "elastic",
-            "destruction",
-            "combative",
-            "hungry",
-            "tramp",
-            "illustrious",
-            "airport",
-            "cow",
-            "judge",
-            "cup",
-            "hurt",
-            "manage",
-            "observe",
-            "tickle",
-            "cautious",
-            "icky",
-            "overjoyed",
-            "voracious",
-            "deeply",
-            "prickly",
-            "incompetent",
-            "big",
-            "volleyball",
-            "fog",
-            "vigorous",
-            "system",
-            "title",
-            "friends",
-            "untidy",
-            "horse",
-            "cat",
-            "dime",
-            "depressed",
-            "oven",
-            "embarrassed",
-            "actor",
-            "guttural",
-            "marble",
-            "disgusting",
-            "account",
-            "uneven",
-            "hill",
-            "materialistic",
-            "groan",
-            "fish",
-            "crowded",
-            "trashy",
-            "reproduce",
-            "sound",
-            "program",
-            "nostalgic",
-            "magic",
-            "deceive",
-            "load",
-            "unsightly",
-            "wren",
-            "loss",
-            "eye",
-            "pigs",
-            "badge",
-            "tearful",
-            "curly",
-            "capable",
-            "crayon",
-            "ultra",
-            "jellyfish",
-            "squash",
-            "argue",
-            "rotten",
-            "afterthought",
-            "mark",
-            "want",
-            "order",
-            "team",
-            "pear",
-            "perfect",
-            "skip",
-            "force",
-            "divergent",
-            "mess up",
-            "curvy",
-            "interfere",
-            "rainy",
-            "numerous",
-            "last",
-            "resonant",
-            "snobbish",
-            "heartbreaking",
-            "silent"
-        ].randomElement()!
-    }
+    static let mechanics0 = FlashcardsSet(name: "Mechanics", numberOfFlashcards: 0)
+    static let thermodynamics3 = FlashcardsSet(name: "Thermodynamics", numberOfFlashcards: 3)
+    static let nanotechnology5 = FlashcardsSet(name: "Nanotechnology", numberOfFlashcards: 5)
+    static let biophysics10 = FlashcardsSet(name: "Biophysics", numberOfFlashcards: 10)
+    static let astrophysics20 = FlashcardsSet(name: "Astrophysics", numberOfFlashcards: 20)
+    static let nanoscience30 = FlashcardsSet(name: "Nanoscience", numberOfFlashcards: 30)
+    static let nuclearPhysics70 = FlashcardsSet(name: "Nuclear Physics", numberOfFlashcards: 70)
+    static let quantumMechanic100 = FlashcardsSet(name: "Quantum Mechanic", numberOfFlashcards: 100)
 
 }

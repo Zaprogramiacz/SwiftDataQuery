@@ -12,6 +12,8 @@ struct FlashcardsApp: App {
             NavigationStack {
                 FlashcardSetsView()
             }
-        }.modelContainer(for: [Flashcard.self, FlashcardsSet.self])
+        }.modelContainer(
+            for: [FlashcardsSet.self, Flashcard.self]
+        )
     }
 }
