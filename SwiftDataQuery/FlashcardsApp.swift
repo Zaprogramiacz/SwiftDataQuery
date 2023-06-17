@@ -5,10 +5,12 @@
 import SwiftUI
 
 @main
-struct SwiftDataQueryTestingApp: App {
+struct FlashcardsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                FlashcardSetsView()
+            }
         }
     }
 }
