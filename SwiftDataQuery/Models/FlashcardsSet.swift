@@ -6,7 +6,7 @@ import SwiftData
 
 @Model
 class FlashcardsSet {
-  @Attribute(.unique) let name: String
+  let name: String
   var flashcards: [Flashcard] = []
 
   init(name: String, flashcards: [Flashcard]) {
