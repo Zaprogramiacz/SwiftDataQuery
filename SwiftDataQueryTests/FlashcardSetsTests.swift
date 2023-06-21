@@ -46,7 +46,7 @@ class FlashcardSetsTests: XCTestCase {
     )
   }
 
-  @MainActor func testDisplayingSetsWithOver50Flaschards() {
+  @MainActor func testDisplayingSetsWithOnlyWithOver50Flaschards() {
     let configuration = ModelConfiguration(inMemory: true)
     let inMemoryContainer = try! ModelContainer(for: [Flashcard.self, FlashcardsSet.self], configuration)
     let context = inMemoryContainer.mainContext

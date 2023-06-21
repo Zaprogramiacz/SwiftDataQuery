@@ -6,7 +6,7 @@ import SwiftUI
 import SwiftData
 
 struct FlashcardSetsView: View {
-  @Query(sort: \.name) var flashcardSets: [FlashcardsSet]
+  @Query(sort: \.name, order: .forward) var flashcardSets: [FlashcardsSet]
   @Environment(\.modelContext) private var context
   
   var body: some View {
