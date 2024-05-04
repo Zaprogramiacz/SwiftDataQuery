@@ -11,8 +11,8 @@ import SwiftUI
 class FlashcardSetsTests: XCTestCase {
 
   @MainActor func testDisplayingFourInsertedSetsAndRemovingOne() {
-    let configuration = ModelConfiguration(inMemory: true)
-    let inMemoryContainer = try! ModelContainer(for: [Flashcard.self, FlashcardsSet.self], configuration)
+    let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
+    let inMemoryContainer = try! ModelContainer(for: Flashcard.self, FlashcardsSet.self, configurations: configuration)
     let context = inMemoryContainer.mainContext
 
     let sut = NavigationStack {
@@ -47,8 +47,8 @@ class FlashcardSetsTests: XCTestCase {
   }
 
   @MainActor func testDisplayingSetsWithOnlyWithOver50Flaschards() {
-    let configuration = ModelConfiguration(inMemory: true)
-    let inMemoryContainer = try! ModelContainer(for: [Flashcard.self, FlashcardsSet.self], configuration)
+    let configuration = ModelConfiguration(isStoredInMemoryOnly: true)
+    let inMemoryContainer = try! ModelContainer(for: Flashcard.self, FlashcardsSet.self, configurations: configuration)
     let context = inMemoryContainer.mainContext
 
     let sut = NavigationStack {
